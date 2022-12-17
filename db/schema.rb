@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_15_123725) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_17_025306) do
+  create_table "ql_truongs", charset: "utf8mb4", force: :cascade do |t|
+    t.string "ten"
+    t.string "chuyen_nganh"
+    t.string "vi_tri"
+    t.date "thoi_gian_hd"
+    t.integer "sl_hoc_sinh"
+    t.string "nganh_dt"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", charset: "utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "username"

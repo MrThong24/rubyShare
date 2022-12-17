@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @ql_truong %>
+
+<div>
+  <%= link_to "Edit this ql truong", edit_ql_truong_path(@ql_truong) %> |
+  <%= link_to "Back to school", ql_truongs_path %>
+
+  <%= button_to "Destroy this ql truong", @ql_truong, method: :delete %>
+</div>

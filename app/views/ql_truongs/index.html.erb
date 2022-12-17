@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Ql truongs</h1>
+
+<div id="ql_truongs">
+  <% @ql_truongs.each do |ql_truong| %>
+    <%= render ql_truong %>
+    <p>
+      <%= link_to "Show this ql truong", ql_truong %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New ql truong", new_ql_truong_path %>

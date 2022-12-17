@@ -1,0 +1,47 @@
+<%= form_with(model: ql_truong) do |form| %>
+  <% if ql_truong.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(ql_truong.errors.count, "error") %> prohibited this ql_truong from being saved:</h2>
+
+      <ul>
+        <% ql_truong.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :ten, style: "display: block" %>
+    <%= form.text_field :ten %>
+  </div>
+
+  <div>
+    <%= form.label :chuyen_nganh, style: "display: block" %>
+    <%= form.text_field :chuyen_nganh %>
+  </div>
+
+  <div>
+    <%= form.label :vi_tri, style: "display: block" %>
+    <%= form.text_field :vi_tri %>
+  </div>
+
+  <div>
+    <%= form.label :thoi_gian_hd, style: "display: block" %>
+    <%= form.date_field :thoi_gian_hd %>
+  </div>
+
+  <div>
+    <%= form.label :sl_hoc_sinh, style: "display: block" %>
+    <%= form.number_field :sl_hoc_sinh %>
+  </div>
+
+  <div>
+    <%= form.label :nganh_dt, style: "display: block" %>
+    <%= form.text_field :nganh_dt %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

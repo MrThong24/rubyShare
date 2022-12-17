@@ -1,17 +1,18 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">List Users</a>
+    <a class="navbar-brand" href="#">NavBar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li><%= link_to "Home",   'users' %></li>
+        <li><%= link_to "User",   'users' %></li>
+        <li class="linkNav"><%= link_to "School",   'ql_truongs' %></li>
       </ul>
     </div>
     <div>
         <% if current_user %>
-          Logged in as <%= current_user.email %>.
+          Logged in as <%= current_user.name %>.
           <%= link_to "Log Out", logout_path %>
         <% else %>
           <%= link_to "Sign Up", signup_path %> or

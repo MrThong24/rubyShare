@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ten: MyString
+  chuyen_nganh: MyString
+  vi_tri: MyString
+  thoi_gian_hd: 2022-12-17
+  sl_hoc_sinh: 1
+  nganh_dt: MyString
+
+two:
+  ten: MyString
+  chuyen_nganh: MyString
+  vi_tri: MyString
+  thoi_gian_hd: 2022-12-17
+  sl_hoc_sinh: 1
+  nganh_dt: MyString

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do 
+  resources :ql_truongs
   get 'admin/dashboard'
    
   root  'static_pages#home'   
